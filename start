@@ -1,0 +1,5 @@
+sudo apt update && sudo apt upgrade -y
+sudo curl -sfL https://get.k3s.io | sh -
+export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+kubectl config get-contexts
+kubectl cluster-info
